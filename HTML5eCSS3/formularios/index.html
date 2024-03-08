@@ -1,12 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Formulario</title>
 </head>
+
 <body>
-    
+    <form action="#" method="get" target="_blank">
+        <p>Meu formulario</p>
+        <p>
+            <label for="nome" id="label-name">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome aqui" required>
+        </p>
+
+        <p>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="eamil" placeholder="Digite seu email aqui" required>
+        </p>
+
+        <p><label for="foto">Selecione sua foto:</label><br>
+            <input type="file" name="foto " id="foto" accept=".png, .svg, image/*" multiple>
+        </p>
+
+        <p>
+            <label for="dev">Sou um Dev</label>
+            <input type="checkbox" id="dev" name="dev" value="sim">
+        </p>
+
+        <p>
+            Qual sua linguagem de programacao favorita?<br>
+            <label for="java">Java</label>
+            <input type="radio" id="java" name="linguagem" value="java"><br>
+
+            <label for="phyton">Phyton</label>
+            <input type="radio" id="phyton" name="linguagem" value="phyton"><br>
+            <label for="js">JavaScript</label>
+            <input type="radio" id="js" name="linguagem" value="js"><br>
+            <label for="c++">C++</label>
+            <input type="radio" id="c++" name="linguagem" value="c++">
+        </p>
+
+        <p>
+            <label for="date">Data de Nascimento:</label><br>
+            <input type="date" name="date" id="date">
+        </p>
+
+        <p>
+            <label for="date-time">Dia e hora atual:</label><br>
+            <input type="datetime-local" name="date-time" id="date-time">
+        </p>
+
+
+        <p>
+            <label for="cor">Qual sua cor favorita?</label><br>
+            <input type="color" id="cor" name="cor" value="#ffffff">
+        </p>
+
+        <p>
+            <label for="senha">Sua senha:</label><br>
+            <input type="password" id="senha" name="senha" placeholder="Sua senha aqui">
+        </p>
+
+        <p>
+            <label for="temp">Choose a comfortable temperature:</label><br />
+            <input type="range" id="temp" name="temp" list="tickmarks" />
+
+            <datalist id="tickmarks">
+                <option value="0" label="0%"></option>
+                <option value="10" ></option>
+                <option value="20" ></option>
+                <option value="30" ></option>
+                <option value="40" ></option>
+                <option value="50" label="50%"></option>
+                <option value="60" ></option>
+                <option value="70" ></option>
+                <option value="80" ></option>
+                <option value="90" ></option>
+                <option value="100" label="100%"></option>
+            </datalist>
+
+        </p>
+
+        <!-- <p>
+            <label for="tempB">Choose a comfortable temperature:</label><br />
+            <input type="range" id="tempB" name="temp" list="values" />
+
+            <datalist id="values">
+                <option value="0" label="very cold!"></option>
+                <option value="25" label="cool"></option>
+                <option value="50" label="medium"></option>
+                <option value="75" label="getting warm!"></option>
+                <option value="100" label="hot!"></option>
+            </datalist>
+        </p> -->
+
+        <p>
+            <label for="select">Selecione seu sexo:</label>
+            <select name="select-sexo" id="select-sexo" >
+                <optgroup label="Genero 1">
+                    <option value="nulo" label="" selected disabled></option>
+                    <option value="masculino" label="Masculino"></option>
+                    <option value="feminino" label="Feminino"></option>
+                    <option value="outro" label="Prefiro nao dizer"></option>
+                </optgroup>
+                <optgroup label="Genero 2">
+                    <option value="nulo" label="" selected disabled></option>
+                    <option value="masculino" label="Masculino"></option>
+                    <option value="feminino" label="Feminino"></option>
+                    <option value="outro" label="Prefiro nao dizer"></option>
+                </optgroup>
+            </select>
+        </p>
+
+
+        <p>
+            <label for="textarea">Espaco para comentarios:</label>
+            <textarea name="textarea" id="textarea" cols="30" rows="5"></textarea>
+        </p>
+
+        <p>
+            <button type="reset">Reset</button>
+            <button type="submit">Enviar</button>
+        </p>
+
+    </form>
 </body>
+
 </html>
