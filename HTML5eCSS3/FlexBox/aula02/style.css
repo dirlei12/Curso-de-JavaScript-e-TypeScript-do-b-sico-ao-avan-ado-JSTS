@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    background-color: bisque;
+    height: 640px;
+    
+}
+
+.flex-item {
+    width: 33.33%;
+    background-color: cadetblue;
+   
+
+}
