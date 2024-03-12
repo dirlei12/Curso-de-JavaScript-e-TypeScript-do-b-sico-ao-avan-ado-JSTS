@@ -5,65 +5,115 @@
     margin: 0;
 }
 
-.grid {
-    background-color: aqua;
-    height: 100vh;
-    width: 100%;
-    padding: 5px;
+html{
+    scroll-behavior: smooth;
+}
 
+body {
+    font-family: sans-serif;
+}
+
+.grid {
+    max-width: 1200px;
+    padding: 15px;
+    margin: 0 auto;
+    padding-top: 73px;
+
+}
+
+.grid::after {
+    content: '';
+    display: block;
+    clear: both;
 }
 
 .grid .col {
     float: left;
-    height: 25vh;
-    /* width: 25%; */
-    background-color: brown;
-    padding: 5px;
-    margin: 5px;
+    height: 300px;
+    padding: 15px;
 }
 
-@media all and (max-width: 320px) {
+.grid .col-content {
+    width: 100%;
+    height: 100%;
+    background-color: cadetblue;
+    margin: 15px;
+    padding: 15px;
+    /* border-radius: 5%; */
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.menu {
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.89);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.233);
+}
+
+.menu ul {
+    list-style: none;
+    display: block;
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.menu ul li{
+    float: left;
+}
+.menu ul li a{
+    display: block;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    transition: all 300ms ease-in-out;
+
+}
+.menu ul li a:hover{
+    background-color: #333333 ;
+}
+
+.full-page{
+    max-width: 100%;
+    padding: 0 30px;
+    margin: 0 auto;
+    padding-top: 78px;
+    height: 100vh;
+    background-color: antiquewhite;
+}
+
+.full-page-content{
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+/* Todas as medias querries daqui para baixo */
+@media all and (max-width: 450px) {
     .grid .col {
+
         width: 100%;
-        background-color: chocolate;
-    }
-
-    .grid{
-        padding: 15px;
-    }
-}
-
-@media all and (min-width:321px ) and (max-width: 768px) {
-    .grid .col {
-        width: 55%;
-        background-color: yellowgreen;
-    }
-
-    .grid{
-        padding: 15px;
         
     }
 }
-@media all and (min-width:769px ) and (max-width: 1200px) {
-    .grid .col {
-        width: 33.33%;
-        background-color: green;
-    }
 
-    .grid{
-        padding: 15px;
+@media all and (min-width:451px) and (max-width: 899px) {
+    .grid .col {
+        width: 45%;
         
     }
 }
-@media all and (min-width: 1201px ) {
+
+@media all and (min-width:900px) and (max-width: 1200px) {
+    .grid .col {
+        width: 30.33%;
+        
+    }
+}
+
+@media all and (min-width: 1201px) {
     .grid .col {
         width: 25%;
-        background-color: black;
-    }
-
-    .grid{
-        padding: 15px;
         
     }
 }
-
