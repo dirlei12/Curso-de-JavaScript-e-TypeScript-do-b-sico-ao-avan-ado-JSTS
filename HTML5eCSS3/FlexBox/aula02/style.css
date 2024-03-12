@@ -6,18 +6,51 @@
 
 .flex-container {
     display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: flex-start;
-    align-content: flex-start;
-    background-color: bisque;
-    height: 640px;
+    /* flex direction, flex wrap */
+    flex-flow: row nowrap;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    height: 800px;
+
     
+
 }
 
 .flex-item {
-    width: 33.33%;
-    background-color: cadetblue;
+    /* flex-grow, shrink, basis
+    flex: 1 1 320px;
+    flex-grow: 1;
+    flex-basis: 320px;
+    flex-shrink: 1; */
+    background-color: cornflowerblue;
+    width: 100%;
+    
+    
+}
+.flex-item:nth-child(1) {
+    
+
+    
+}
+
+.flex-item:nth-child(2) {
    
+    
+    
+}
+
+.flex-item:nth-child(3) {
+    
+    
+}
+.flex-item:nth-child(4) {
+    
+    
+}
+.flex-item:nth-child(5) {
+    
+    
 
 }
